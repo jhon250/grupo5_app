@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_FPR_XForms.Pages.Cliente.ServicioContratadoPage"
+             Title="Servicios Contratados">
+
+    <StackLayout >
+
+        <!-- Agregar servicio -->
+        <Frame>
+
+            <StackLayout>
+
+                <Image Source="https://cdn-icons-png.flaticon.com/512/63/63747.png"
+                       WidthRequest="50"
+                       x:Name="AgregarServicioContratar"/>
+
+            </StackLayout>
+
+        </Frame>
+
+        <ScrollView>
+            <!-- servicio 1 -->
+            <Frame Padding="5">
+
+                <StackLayout Orientation="Horizontal">
+
+                    <StackLayout>
+
+                        <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                           WidthRequest="80"/>
+
+                        <Label Text="nombre"
+                               HorizontalTextAlignment="Center"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                    <!--datos de servicio-->
+                    <Frame Padding="5,5,5,5">
+
+                        <StackLayout >
+
+                            <!--titulo y precio del servicio-->
+                            <StackLayout Orientation="Horizontal">
+
+                                <Label Text="titulo del servicio"
+                                       TextColor="Black"/>
+
+                                <Frame Padding="0"
+                                       HorizontalOptions="EndAndExpand">
+
+                                    <Label Text="S/ 30.25"/>
+
+                                </Frame>
+
+                            </StackLayout>
+
+                            <!--descripcion del servicio-->
+                            <Label Text="El texto es la unidad superior de comunicación y de la competencia organizacional del hablante."
+                                   />
+
+                            <!-- direccion -->
+                            <Label Text="Arequipa, selva Alegre"
+                                   TextColor="Black"/>
+
+                            <!--estrellas-->
+                            <StackLayout Orientation="Horizontal">
+
+                                <Image Source="https://cdn.pixabay.com/photo/2013/07/13/10/22/star-157086_960_720.png"
+                                       WidthRequest="15"
+                                       HeightRequest="15"/>
+
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                       WidthRequest="15"
+                                       HeightRequest="15"/>
+
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                       WidthRequest="15"
+                                       HeightRequest="15"/>
+
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                       WidthRequest="15"
+                                       HeightRequest="15"/>
+
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                       WidthRequest="15"
+                                       HeightRequest="15"/>
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </Frame>
+
+                </StackLayout>
+
+            </Frame>
+            
+        </ScrollView>
+        
+
+
+
+
+
+    </StackLayout>
+    
+</ContentPage>

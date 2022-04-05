@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_FPR_XForms.Pages.Servicios.ServiciosPage"
+             Title="servicio">
+    
+    <StackLayout>
+
+        <!-- foto  -->
+        <StackLayout>
+
+            <StackLayout>
+
+                <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                       WidthRequest="150"/>
+
+                <Image Source="https://static.vecteezy.com/system/resources/previews/002/261/132/original/camera-icon-symbol-sign-isolate-on-white-background-illustration-eps-10-free-vector.jpg"
+                       WidthRequest="40"/>
+
+            </StackLayout>
+
+
+            <StackLayout>
+
+                <Frame>
+
+                    
+                    
+                </Frame>
+
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>

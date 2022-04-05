@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_FPR_XForms.MasterPage"
+             Title="MasterPage">
+    
+    <!-- Menu lateral -->
+    <StackLayout Orientation="Vertical">
+
+        <!-- titulo -->
+        <Label Text="Barra Lateral de navegacion"
+               Padding="5"
+               HorizontalTextAlignment="Center"
+               FontSize="20"
+               TextColor="Black"/>
+
+        <!-- inicio -->
+        <Button Text="inicio"
+                Clicked="Button_Inicio"/>
+
+        <!-- Mi perfil -->
+        <Button Text="Mi perfil" 
+                Clicked="Button_Perfil"/>
+
+        <!-- Servicios Contratados -->
+        <Button Text="servicios contratados"
+                Clicked="Button_ServiContratado"/>
+
+        <!-- Mis servicios -->
+        <Button Text="Mis servicios"
+                Clicked="Button_MisServicios"/>
+
+        <!-- Crear Servicios -->
+        <Button Text="Crear servicio"
+                Clicked="Button_CrearServicios"/>
+
+        <!-- Configuracion -->
+        <Button Text="configuraciones"
+                Clicked="Configuracion"/>
+
+        <!-- Acerca de nosotros -->
+        <Button Text="acerca de nosotros"
+                Clicked="Button_Acerca_nosotros"/>
+
+        <!-- Cerrar sesion -->
+        <Button Text="Cerrar sesion"
+                Clicked="Button_CerrarSesion"
+                VerticalOptions="EndAndExpand"
+                Margin="0,0,0,20"/>
+
+    </StackLayout>
+    
+
+</ContentPage>

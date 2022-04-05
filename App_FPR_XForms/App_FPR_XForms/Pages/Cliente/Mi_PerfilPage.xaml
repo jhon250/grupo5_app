@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_FPR_XForms.Pages.Cliente.Mi_PerfilPage"
+             Title="Mi perfil">
+
+    <StackLayout Margin="5">
+
+        <!-- foto y nombre -->
+        <StackLayout >
+
+            <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                   WidthRequest="180"
+                   />
+
+            <Image Source="https://static.vecteezy.com/system/resources/previews/002/261/132/original/camera-icon-symbol-sign-isolate-on-white-background-illustration-eps-10-free-vector.jpg"
+                   WidthRequest="30"/>
+
+            <Label Text="nombre completo" 
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin="5,5,5,5"/>
+
+        </StackLayout>
+
+        <!-- datos del cliente -->
+        <Frame CornerRadius="20"
+               Padding="15">
+
+            <StackLayout>
+
+                <!-- Edad -->
+                <StackLayout Orientation="Horizontal">
+
+                    <Label Text="Edad"
+                       HorizontalOptions="Start"/>
+
+                    <Label Text="20"
+                       HorizontalOptions="EndAndExpand"/>
+
+                </StackLayout>
+    
+                <!-- linea 1 -->
+                <BoxView HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         BackgroundColor="DarkGray"/>
+
+                <!-- Genero -->
+                <StackLayout Orientation="Horizontal">
+
+                    <Label Text="Genero"
+                           HorizontalOptions="Start"/>
+
+                    <Label Text="Hombre"
+                           HorizontalOptions="EndAndExpand"/>
+
+                </StackLayout>
+
+                <!-- linea 2 -->
+                <BoxView HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         BackgroundColor="DarkGray"/>
+
+                <!-- telefono -->
+                <StackLayout Orientation="Horizontal">
+
+                    <Label Text="Celular"
+                       HorizontalOptions="Start"/>
+
+                    <Label Text="45648416546"
+                       HorizontalOptions="EndAndExpand"/>
+
+                </StackLayout>
+
+                <!-- linea 3 -->
+                <BoxView HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         BackgroundColor="DarkGray"/>
+
+                <!-- Correo -->
+                <StackLayout Orientation="Horizontal">
+
+                    <Label Text="Correo"
+                           HorizontalOptions="Start"/>
+
+                    <Label Text="example@example.com"
+                           HorizontalOptions="EndAndExpand"/>
+
+                </StackLayout>
+
+                <!-- linea 1 -->
+                <BoxView HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         BackgroundColor="DarkGray"/>
+
+                <Label Text="otros -------------------"/>
+                
+                
+
+            </StackLayout>
+            
+        </Frame>
+
+        <Button Text="editar info"
+                Clicked="Button_Edit_Info"/>
+
+    </StackLayout>
+    
+</ContentPage>

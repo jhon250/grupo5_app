@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_FPR_XForms.DetailPage"
+             Title="pagina principal">
+    
+    <!-- contenedor principal -->
+    <StackLayout>
+        
+        <!-- Campo de busqueda -->
+        <Frame Padding="0">
+
+            <StackLayout Orientation="Horizontal">
+
+                <Image Source="https://w7.pngwing.com/pngs/737/207/png-transparent-computer-icons-desktop-search-for-desktop-wallpaper-black-and-white-symbol.png"
+                           WidthRequest="40"
+                           HeightRequest="40"/>
+
+                <Entry Placeholder="Buscar servicio o prefecional"
+                           HorizontalOptions="FillAndExpand"
+                           Keyboard="Text"
+                           />
+
+            </StackLayout>
+
+        </Frame>
+        
+        
+        <!-- Categorias -->
+        <Frame>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Button Text="limpieza"
+                        Clicked="Button_Limpieza"/>
+
+            </StackLayout>
+            
+        </Frame>
+
+        <!-- scroll para la lista de servicios -->
+        <ScrollView>
+            
+            <!-- Contenedor lista de servicios -->
+            <StackLayout Margin="5,5,5,5">
+
+                <!-- servicio 1 -->
+                <Frame x:Name="servicio_1" 
+                       Padding="5">
+
+                    <StackLayout Orientation="Horizontal">
+                
+                        <!-- foto y nombre del profecional -->
+                        <StackLayout>
+
+                            <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                       WidthRequest="80"/>
+
+                            <Label Text="nombre"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"/>
+                        </StackLayout>
+
+                        <!--datos de servicio-->
+                        <Frame Padding="5,5,5,5">
+
+                            <StackLayout >
+
+                                <!--titulo y precio del servicio-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="titulo del servicio"
+                                   TextColor="Black"/>
+
+                                    <Frame Padding="0"
+                                   HorizontalOptions="EndAndExpand">
+
+                                        <Label Text="S/ 30.25"/>
+
+                                    </Frame>
+
+                                </StackLayout>
+
+                                <!--descripcion del servicio-->
+                                <Label Text="El texto es la unidad superior de comunicación y de la competencia organizacional del hablante."
+                                       TextColor="Black"/>
+
+                                <!-- direccion -->
+                                <Label Text="Arequipa, selva Alegre"
+                               TextColor="Black"/>
+
+                                <!--estrellas-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Image Source="https://cdn.pixabay.com/photo/2013/07/13/10/22/star-157086_960_720.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <!-- servicio 2 -->
+                <Frame x:Name="servicio_2" 
+                       Padding="5" >
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <!-- foto y nombre del profecional -->
+                        <StackLayout>
+
+                            <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                       WidthRequest="80"/>
+
+                            <Label Text="nombre"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"/>
+                        </StackLayout>
+
+                        <!--datos de servicio-->
+                        <Frame Padding="5,5,5,5">
+
+                            <StackLayout >
+
+                                <!--titulo y precio del servicio-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="titulo del servicio"
+                                   TextColor="Black"/>
+
+                                    <Frame Padding="0"
+                                   HorizontalOptions="EndAndExpand">
+
+                                        <Label Text="S/ 30.25"/>
+
+                                    </Frame>
+
+                                </StackLayout>
+
+                                <!--descripcion del servicio-->
+                                <Label Text="El texto es la unidad superior de comunicación y de la competencia organizacional del hablante."
+                                       TextColor="Black"/>
+
+                                <!-- direccion -->
+                                <Label Text="Arequipa, selva Alegre"
+                                       TextColor="Black"/>
+
+                                <!--estrellas-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Image Source="https://cdn.pixabay.com/photo/2013/07/13/10/22/star-157086_960_720.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <!-- servicio 3 -->
+                <Frame x:Name="servicio_3" 
+                       Padding="5">
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <!-- foto y nombre del profecional -->
+                        <StackLayout>
+
+                            <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                       WidthRequest="80"/>
+
+                            <Label Text="nombre"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"/>
+                        </StackLayout>
+
+                        <!--datos de servicio-->
+                        <Frame Padding="5,5,5,5">
+
+                            <StackLayout >
+
+                                <!--titulo y precio del servicio-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="titulo del servicio"
+                                   TextColor="Black"/>
+
+                                    <Frame Padding="0"
+                                   HorizontalOptions="EndAndExpand">
+
+                                        <Label Text="S/ 30.25"/>
+
+                                    </Frame>
+
+                                </StackLayout>
+
+                                <!--descripcion del servicio-->
+                                <Label Text="El texto es la unidad superior de comunicación y de la competencia organizacional del hablante."
+                                       TextColor="Black"/>
+
+                                <!-- direccion -->
+                                <Label Text="Arequipa, selva Alegre"
+                               TextColor="Black"/>
+
+                                <!--estrellas-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Image Source="https://cdn.pixabay.com/photo/2013/07/13/10/22/star-157086_960_720.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <!-- servicio 4 -->
+                <Frame x:Name="servicio_4" 
+                       Padding="5">
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <!-- foto y nombre del profecional -->
+                        <StackLayout>
+
+                            <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                       WidthRequest="80"/>
+
+                            <Label Text="nombre"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"/>
+                        </StackLayout>
+
+                        <!--datos de servicio-->
+                        <Frame Padding="5,5,5,5">
+
+                            <StackLayout >
+
+                                <!--titulo y precio del servicio-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="titulo del servicio"
+                                   TextColor="Black"/>
+
+                                    <Frame Padding="0"
+                                   HorizontalOptions="EndAndExpand">
+
+                                        <Label Text="S/ 30.25"/>
+
+                                    </Frame>
+
+                                </StackLayout>
+
+                                <!--descripcion del servicio-->
+                                <Label Text="El texto es la unidad superior de comunicación y de la competencia organizacional del hablante."
+                                       TextColor="Black"/>
+
+                                <!-- direccion -->
+                                <Label Text="Arequipa, selva Alegre"
+                               TextColor="Black"/>
+
+                                <!--estrellas-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Image Source="https://cdn.pixabay.com/photo/2013/07/13/10/22/star-157086_960_720.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <!-- servicio 5 -->
+                <Frame x:Name="servicio_5" 
+                       Padding="5">
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <!-- foto y nombre del profecional -->
+                        <StackLayout>
+
+                            <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                       WidthRequest="80"/>
+
+                            <Label Text="nombre"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"/>
+                        </StackLayout>
+
+                        <!--datos de servicio-->
+                        <Frame Padding="5,5,5,5">
+
+                            <StackLayout >
+
+                                <!--titulo y precio del servicio-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="titulo del servicio"
+                                   TextColor="Black"/>
+
+                                    <Frame Padding="0"
+                                   HorizontalOptions="EndAndExpand">
+
+                                        <Label Text="S/ 30.25"/>
+
+                                    </Frame>
+
+                                </StackLayout>
+
+                                <!--descripcion del servicio-->
+                                <Label Text="El texto es la unidad superior de comunicación y de la competencia organizacional del hablante."
+                                       TextColor="Black"/>
+
+                                <!-- direccion -->
+                                <Label Text="Arequipa, selva Alegre"
+                               TextColor="Black"/>
+
+                                <!--estrellas-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Image Source="https://cdn.pixabay.com/photo/2013/07/13/10/22/star-157086_960_720.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <!-- servicio 5 -->
+                <Frame x:Name="servicio_6" 
+                       Padding="5">
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <!-- foto y nombre del profecional -->
+                        <StackLayout>
+
+                            <Image Source="https://thumbs.dreamstime.com/b/icono-del-hombre-de-avatar-dise%C3%B1o-de-los-empresarios-gr%C3%A1fico-de-vector-73570702.jpg"
+                       WidthRequest="80"/>
+
+                            <Label Text="nombre"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"/>
+                        </StackLayout>
+
+                        <!--datos de servicio-->
+                        <Frame Padding="5,5,5,5">
+
+                            <StackLayout >
+
+                                <!--titulo y precio del servicio-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="titulo del servicio"
+                                   TextColor="Black"/>
+
+                                    <Frame Padding="0"
+                                   HorizontalOptions="EndAndExpand">
+
+                                        <Label Text="S/ 30.25"/>
+
+                                    </Frame>
+
+                                </StackLayout>
+
+                                <!--descripcion del servicio-->
+                                <Label Text="El texto es la unidad superior de comunicación y de la competencia organizacional del hablante."
+                                       TextColor="Black"/>
+
+                                <!-- direccion -->
+                                <Label Text="Arequipa, selva Alegre"
+                               TextColor="Black"/>
+
+                                <!--estrellas-->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Image Source="https://cdn.pixabay.com/photo/2013/07/13/10/22/star-157086_960_720.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/12/12783.png"
+                                   WidthRequest="15"
+                                   HeightRequest="15"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+        </ScrollView>
+        
+    </StackLayout>
+    
+</ContentPage>

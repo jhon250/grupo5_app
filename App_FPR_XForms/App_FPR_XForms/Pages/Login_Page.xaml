@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_FPR_XForms.Pages.Login_Page">
+    <!-- Contenedor principal -->
+    <StackLayout Margin="5,5,5,5">
+
+        <!-- inicio sesion -->
+        <Label Text="Inicio Sesion"
+               FontSize="40"/>
+
+        <!-- usuario -->
+        <Frame CornerRadius="40"
+               Padding="15"
+               Margin="5">
+
+            <StackLayout Orientation="Horizontal">
+
+                <Image 
+                       WidthRequest="40"
+                       HeightRequest="40"/>
+
+                <Entry x:Name="usuarioGui"
+                       Placeholder="Usuario"
+                       PlaceholderColor="Black"
+                       FontSize="16"
+                       HorizontalOptions="FillAndExpand"/>
+
+            </StackLayout>
+
+        </Frame>
+
+        <!-- contraseña -->
+        <Frame CornerRadius="40"
+               Padding="15"
+               Margin="5,0,5,0">
+
+            <StackLayout Orientation="Horizontal">
+
+                <Image
+                       WidthRequest="40"
+                       HeightRequest="40"/>
+
+                <Entry x:Name="contraseñaGui"
+                       Placeholder="Contraseña"
+                       PlaceholderColor="Black"
+                       FontSize="16"
+                       HorizontalOptions="FillAndExpand"
+                       IsPassword="True"/>
+
+            </StackLayout>
+
+        </Frame>
+
+        <!-- ¿has olvidado tu contraseña? -->
+        <Label Text="¿has olvidado tu contraseña?"
+               x:Name="olvidadoContraseña"
+               TextColor="#B908F7"
+               FontSize="15"
+               HorizontalTextAlignment="End"
+               Padding="5"
+               Margin="5,0,5,0"/>
+
+        <!-- boton entrar -->
+        <Button Text="ENTRAR"
+                Clicked="Button_Entrar" 
+                CornerRadius="50"
+                Padding="5"
+                Margin="5,0,5,0"
+                FontSize="20"/>
+
+    </StackLayout>
+</ContentPage>
